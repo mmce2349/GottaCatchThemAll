@@ -195,14 +195,14 @@ Constructors and Methods </panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
+      <x>405</x>
       <y>468</y>
       <w>171</w>
       <h>81</h>
     </coordinates>
     <panel_attributes>/pokemon.model :: Water/
 --
-+ Iron Defense(int): int
++ Iron Defense(): boolean
 + HydroPump(int) : int
 + WaterPulse(int) : int</panel_attributes>
     <additional_attributes/>
@@ -328,46 +328,46 @@ Constructors and Methods </panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>603</x>
+      <x>567</x>
       <y>432</y>
-      <w>549</w>
+      <w>585</w>
       <h>135</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;130.0;590.0;130.0;590.0;10.0</additional_attributes>
+    <additional_attributes>10.0;130.0;630.0;130.0;630.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>603</x>
+      <x>567</x>
       <y>432</y>
-      <w>486</w>
+      <w>522</w>
       <h>108</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;100.0;520.0;100.0;520.0;10.0</additional_attributes>
+    <additional_attributes>10.0;100.0;560.0;100.0;560.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>594</x>
+      <x>567</x>
       <y>369</y>
-      <w>522</w>
+      <w>549</w>
       <h>180</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;180.0;560.0;180.0;560.0;10.0</additional_attributes>
+    <additional_attributes>10.0;180.0;590.0;180.0;590.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>603</x>
+      <x>567</x>
       <y>432</y>
-      <w>81</w>
+      <w>117</w>
       <h>81</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;70.0;70.0;10.0</additional_attributes>
+    <additional_attributes>10.0;70.0;110.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
