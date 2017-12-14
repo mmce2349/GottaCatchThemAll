@@ -15,25 +15,20 @@ public abstract class Pokemon
 		this.number = number; 
 	}
 	
-	public final String getPokemonTypes()
+	public final String[] getPokemonTypes()
 	{
-		String pokemonTypes = "This pokemon has the following types: \n";
 		Class<?> [] types = getClass().getInterfaces();
 		String [] pokeTypes = new String[types.length];
 		
 		for(int index = 0; index < types.length; index++)
 		{
 			String currentInterface = types[index].getCanonicalName();
-			
+			currentInterface = currentInterface.replace(this.getClass().getPackage().getName() + ".", "");
 			pokeTypes[index] = currentInterface; 
 		}
 		
-		for(String current : pokeTypes)
-		{
-			String temp = current.replace(this.getClass().getPackage().getName() + ".", "");
-			pokemonTypes += temp + "\n";
-		}
-		return pokemonTypes; 
+		
+		return pokeTypes; 
 	}
 	
 	public String toString()
