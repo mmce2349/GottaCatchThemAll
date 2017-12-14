@@ -43,4 +43,60 @@ public abstract class Pokemon
 		
 		return pokemonInfo;
 	}
+
+	public int getHealthPoints() 
+	{
+		return healthPoints;
+	}
+
+	public void setHealthPoints(int healthPoints) 
+	{
+		this.healthPoints = healthPoints;
+	}
+
+	public int getAttackPoints() 
+	{
+		
+		return attackPoints;
+	}
+
+	public void setAttackPoints(int attackPoints) 
+	{
+		this.attackPoints = attackPoints;
+	}
+
+	public double getEnhancementModifier() 
+	{
+		return enhancementModifier;
+	}
+
+	public void setEnhancementModifier(double enhancementModifier) 
+	{
+		this.enhancementModifier = enhancementModifier;
+	}
+
+	public String getName() 
+	{
+		return name;
+	}
+
+	public void setName(String name) 
+	{
+		this.name = name;
+	}
+
+	public boolean isCanEvolve() 
+	{
+		return canEvolve;
+	}
+
+	public void setCanEvolve(boolean canEvolve) 
+	{
+		this.canEvolve = canEvolve;
+	}
+
+	public int getNumber() 
+	{
+		return number;
+	}
 }
