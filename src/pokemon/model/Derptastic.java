@@ -1,5 +1,8 @@
 package pokemon.model;
 
-public class Derptastic {
-
+public interface Derptastic 
+{
+	public void derpDerpDerp();
+	public int annoy(int amount);
+	public String sayDerpy();
 }
