@@ -239,10 +239,10 @@ fg=blue
       <x>623</x>
       <y>406</y>
       <w>161</w>
-      <h>154</h>
+      <h>147</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;80.0;110.0;200.0;210.0;200.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0;100.0;190.0;210.0;190.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
