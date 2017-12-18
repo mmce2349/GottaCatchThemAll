@@ -1,12 +1,11 @@
 package pokemon.model;
 
-public class Volcanion extends Pokemon implements Water, Comparable
+public class KingDra extends Pokemon implements SeaDra
 {
-	public Volcanion(int number, String name)
+	public KingDra(int number, String name)
 	{
 		super(number, name);
 	}
-	
 	public boolean IronDefense()
 	{
 		return true;
@@ -23,7 +22,4 @@ public class Volcanion extends Pokemon implements Water, Comparable
 		int damage = -20;
 		return damage;
 	}
-	
-	Comparable<Fire>//figure this out. 
-	
 }
