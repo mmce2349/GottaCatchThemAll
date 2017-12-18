@@ -8,7 +8,7 @@ public class Bulbasaur extends Pokemon implements Grass
 		super(number, name);
 	}
 	
-	public int Razorleaf(int damage)
+	public int RazorLeaf(int damage)
 	{
 		int attack = -50;
 		return attack; 
@@ -20,7 +20,7 @@ public class Bulbasaur extends Pokemon implements Grass
 		return heal;
 	}
 	
-	public int tackle(int damage)
+	public int Tackle(int damage)
 	{
 		int attack = -10;
 		return attack; 
