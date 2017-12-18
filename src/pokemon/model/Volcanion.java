@@ -18,7 +18,7 @@ public class Volcanion extends Pokemon implements Water, Comparable
 		return damage;
 	}
 	
-	public int waterPulse(int erosion)
+	public int WaterPulse(int erosion)
 	{
 		int damage = -20;
 		return damage;

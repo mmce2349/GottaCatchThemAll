@@ -2,8 +2,8 @@ package pokemon.model;
 
 public interface Grass 
 {
-	public int RazorLeaf();
-	public int Synthesis();
-	public int Tackle(); 
+	public int RazorLeaf(int damage);
+	public int Synthesis(int health);
+	public int Tackle(int damage); 
 
 }

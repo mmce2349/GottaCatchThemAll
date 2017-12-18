@@ -1,6 +1,6 @@
 package pokemon.model;
 
-public class KingDra extends Pokemon implements SeaDra
+public class KingDra extends SeaDra implements Water
 {
 	public KingDra(int number, String name)
 	{
@@ -17,7 +17,7 @@ public class KingDra extends Pokemon implements SeaDra
 		return damage;
 	}
 	
-	public int waterPulse(int erosion)
+	public int WaterPulse(int erosion)
 	{
 		int damage = -20;
 		return damage;

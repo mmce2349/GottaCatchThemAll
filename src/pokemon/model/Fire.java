@@ -2,7 +2,7 @@ package pokemon.model;
 
 public interface Fire 
 {
-	public int slash();
-	public int flamethrower();
-	public int ember();
+	public int slash(int damage);
+	public int flamethrower(int burn);
+	public int ember(int burn);
 }
