@@ -1,12 +1,12 @@
 package pokemon.model;
 
-public class Volcanion extends Pokemon implements Water, Comparable
+public class Volcanion extends Pokemon implements Water, Fire
 {
 	public Volcanion(int number, String name)
 	{
 		super(number, name);
 	}
-	
+	//Water
 	public boolean IronDefense()
 	{
 		return true;
@@ -24,6 +24,25 @@ public class Volcanion extends Pokemon implements Water, Comparable
 		return damage;
 	}
 	
-	Comparable<Fire>//figure this out. 
+	
+	//Fire
+	public int slash(int damage)
+		{
+			int attack = -10;
+			return attack;
+		}
+		
+	public int flamethrower(int burn)
+		{
+			int damage = -60;
+			return damage;
+		}
+		
+	public int ember(int burn)
+		{
+			int damage = -15;
+			return damage; 
+		}
+	
 	
 }
