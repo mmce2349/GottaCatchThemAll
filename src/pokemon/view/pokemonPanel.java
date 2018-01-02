@@ -41,7 +41,7 @@ public class pokemonPanel extends JPanel
 		numberField.setText(appController.getPokedex().get(index).getNumber() + "");
 		attackField.setText(appController.getPokedex().get(index).getAttackPoints() + "");
 		healthField.setText(appController.getPokedex().get(index).getHealthPoints() + "");
-		modifierField.setText(appController.getPokdex().get(index).getHealthPoints() + "");
+		modifierField.setText(appController.getPokedex().get(index).getHealthPoints() + "");
 		
 	}
 }
