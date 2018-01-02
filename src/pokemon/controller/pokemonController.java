@@ -12,6 +12,15 @@ public class pokemonController
 		return pokedex;
 	}
 	
+	public boolean isValidInteger(String input)
+	{
+		return false;
+	}
+	
+	public boolean isValidDouble(String input)
+	{
+		return false;  
+	}
 	public void start()
 	{
 		
