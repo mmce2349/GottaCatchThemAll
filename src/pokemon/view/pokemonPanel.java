@@ -16,10 +16,8 @@ import javax.swing.JComboBox;
 
 public class pokemonPanel extends JPanel
 {
-		public pokemonPanel(pokemonController appController)
-		{
-			
-		}
+	private pokemonController appController; 
+	
 	private JLabel healthLabel;
 	private JLabel attackLabel;
 	private JLabel nameLabel;
@@ -49,6 +47,6 @@ public class pokemonPanel extends JPanel
 	
 	private void updatePokedexInfo(int index)
 	{
-		nameFld
+		name
 	}
 }
