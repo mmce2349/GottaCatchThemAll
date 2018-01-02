@@ -57,6 +57,11 @@ public class pokemonPanel extends JPanel
 	private void setupPanel()
 	{
 		this.setBackground(Color.RED);
+		this.add(healthLabel);
+		this.add(attackLabel);
+		this.add(numberLabel);
+		this.add(evolvableLabel);
+		
 		
 	}
 	
