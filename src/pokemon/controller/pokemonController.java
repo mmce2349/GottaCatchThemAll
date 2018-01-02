@@ -1,13 +1,15 @@
 package pokemon.controller;
+import pokemon.model.Pokemon;
+import java.util.List;
+import java.util.ArrayList;
 
 public class pokemonController 
 {
-	public pokemonController()
+	private List<Pokemon> pokedex;
+	
+	public List<Pokemon> getPokedex()
 	{
-		//Types: Grass, Fire, and water
-		// Moves Grass: Razor leaf, Tackle, and Synthesis
-		// Moves Fire: Flamethrower, Ember, and Slash
-		// Moves Water: IronDefense, HydroPump, and WaterPulse.
+		return pokedex;
 	}
 	
 	public void start()
