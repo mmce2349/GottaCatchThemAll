@@ -49,6 +49,13 @@ public class pokemonPanel extends JPanel
 	}
 	public pokemonPanel(pokemonController appController)
 	{
+		this.healthLabel = new JLabel("0");
+		this.attackLabel = new JLabel("Default Attack. ");
+		this.nameLabel = new JLabel("Default name");
+		this.numberLabel = new JLabel("0");
+		this.evolvableLabel = new JLabel("no modifier");
+		this.modifierLabel = new JLabel("modification");
+				
 	setupPanel();
 	setupLayout();
 	setupListeners();
@@ -59,6 +66,7 @@ public class pokemonPanel extends JPanel
 		this.setBackground(Color.RED);
 		this.add(healthLabel);
 		this.add(attackLabel);
+		this.add(nameLabel);
 		this.add(numberLabel);
 		this.add(evolvableLabel);
 		
