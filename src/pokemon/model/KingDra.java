@@ -17,9 +17,10 @@ public class KingDra extends SeaDra implements Water
 		super(number, name);
 		setup();
 	}
-	
+	@Override
 	protected void setup()
 	{
+		super.setup();
 		this.setAttackPoints(95);
 		this.setCanEvolve(false);
 		this.setEnhancementModifier(.89);
