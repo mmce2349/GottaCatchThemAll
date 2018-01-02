@@ -1,6 +1,9 @@
 package pokemon.view;
 
 import pokemon.controller.pokemonController;
+
+import java.awt.Color;
+
 import javax.swing.*;
 
 public class pokemonPanel extends JPanel
@@ -53,6 +56,7 @@ public class pokemonPanel extends JPanel
 	
 	private void setupPanel()
 	{
+		this.setBackground(Color.RED);
 		
 	}
 	
