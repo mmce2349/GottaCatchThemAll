@@ -14,12 +14,35 @@ public class pokemonController
 	
 	public boolean isValidInteger(String input)
 	{
-		return false;
+		boolean valid= false;
+		
+		try
+		{
+			Integer.parseInt(input);
+			valid = true;
+		}
+		catch(NumberFormatException error)
+		{
+			
+		}
+		return valid;
 	}
 	
 	public boolean isValidDouble(String input)
 	{
-		return false;  
+		boolean valid = false;
+		
+		try 
+		{
+			Double.parseDouble(input);
+			valid = true;
+		}
+		
+		catch(NumberFormatException error)
+		{
+			
+		}
+		return valid; 
 	}
 	public void start()
 	{
