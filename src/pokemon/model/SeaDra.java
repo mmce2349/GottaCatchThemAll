@@ -2,9 +2,27 @@ package pokemon.model;
 
 public class SeaDra extends Pokemon implements Water
 {
+	public SeaDra()
+	{
+		super(117, "SeaDra");
+		setup();
+	}
+	public SeaDra(String name)
+	{
+		super(117, name);
+		setup();
+	}
 	public SeaDra(int number, String name)
 	{
 		super(number, name);
+		setup();
+	}
+	protected void setup()
+	{
+		this.setAttackPoints(65);
+		this.setCanEvolve(true);
+		this.setEnhancementModifier(.89);
+		this.setHealthPoints(55);
 	}
 	public boolean IronDefense()
 	{
