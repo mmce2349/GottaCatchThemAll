@@ -3,6 +3,7 @@ import pokemon.model.Pokemon;
 import pokemon.model.*;
 import java.util.List;
 import java.util.ArrayList;
+import pokemon.view.*;
 
 public class pokemonController 
 {
@@ -11,7 +12,7 @@ public class pokemonController
 	
 	public pokemonController()
 	{
-		pokedex new ArrayList<Pokemon>();
+		this.pokedex = new ArrayList<Pokemon>();
 		buildPokedex();
 		
 		appFrame = new pokemonFrame(this);
