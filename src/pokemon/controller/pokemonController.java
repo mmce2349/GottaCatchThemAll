@@ -7,7 +7,21 @@ import java.util.ArrayList;
 public class pokemonController 
 {
 	private List<Pokemon> pokedex;
+	private pokemonFrame appFrame;
 	
+	public pokemonController()
+	{
+		pokedex new ArrayList<Pokemon>();
+		buildPokedex();
+		
+		appFrame = new pokemonFrame(this);
+	}
+	private void buildPokedex()
+	{
+		pokedex.add(new Squirtle());
+		pokedex.add(new SeaDra("mmm seahorse"));
+	
+	}
 	public List<Pokemon> getPokedex()
 	{
 		pokedex.add(new Squirtle());
@@ -51,6 +65,15 @@ public class pokemonController
 			
 		}
 		return valid; 
+	}
+	public String [] convertPokedex()
+	{
+		String [] names = new String [pokedex.size()];
+		for(int index = 0; index < pokedex.size(); index++)
+		{
+			names[index] = pokedex.get(index).getName();
+		}
+		return names;
 	}
 	public void start()
 	{
