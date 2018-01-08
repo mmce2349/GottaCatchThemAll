@@ -88,10 +88,14 @@ public class pokemonPanel extends JPanel
 	setupLayout();
 	setupListeners();
 	}
-//	private void updatePokedexInfo(int index)
-//	{
-//		
-//	}
+	private void updatePokedexInfo()
+	{
+		
+	}
+	private void updateImage()
+	{
+		
+	}
 	private void setupComboBox()
 	{
 		DefaultComboBoxModel pokemonModel = new DefaultComboBoxModel(appController.convertPokedex());
@@ -225,7 +229,7 @@ public class pokemonPanel extends JPanel
 			{
 			int selectedPokemonIndex = pokedexDropdown.getSelectedIndex();
 			updatePokedexInfo(selectedPokemonIndex);
-//			updateImage();
+			updateImage();
 			updateTypePanels();
 			repaint();
 			}
