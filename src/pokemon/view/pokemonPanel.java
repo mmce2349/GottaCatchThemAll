@@ -9,7 +9,7 @@ import javax.swing.*;
 public class pokemonPanel extends JPanel
 {
 	private pokemonController appController; 
-	
+	private SpringLayout appLayout;
 	private JLabel healthLabel;
 	private JLabel attackLabel;
 	private JLabel nameLabel;
@@ -30,12 +30,13 @@ public class pokemonPanel extends JPanel
 	
 	private JButton saveButton;
 	private JButton clearButton;
-	private JComboBox pokeexDropdown;
+	private JComboBox pokedexDropdown;
 	
 	private JPanel firstType;
 	private JPanel secondType;
 	private JPanel thirdType;
 	private JPanel fourthType; 
+	
 	
 	private void updatePokedexInfo(int index)
 	{
@@ -49,13 +50,36 @@ public class pokemonPanel extends JPanel
 	}
 	public pokemonPanel(pokemonController appController)
 	{
-		this.healthLabel = new JLabel("0");
-		this.attackLabel = new JLabel("Default Attack. ");
-		this.nameLabel = new JLabel("Default name");
-		this.numberLabel = new JLabel("0");
-		this.evolvableLabel = new JLabel("no modifier");
-		this.modifierLabel = new JLabel("modification");
-				
+		super();
+		this.appController = appController;
+		
+		appLayout = new SpringLayout();
+		
+		evolvableBox = new JCheckBox();
+		nameField = new JTextField("name");
+		numberField = new JTextField("##");
+		attackField = new JTextField("ap");
+		healthField = new JTextField("hp");
+		modifierField = new JTextField("mod");
+		
+		iconLabel = new JLabel("pokemon", new ImageIcon(getClass().getResource("/pokemon/view/images/pokemon-logo-black-transparent.png")), JLabel.CENTER);
+		
+		
+		healthLabel = new JLabel("health");
+		attackLabel = new JLabel("Attack. ");
+		nameLabel = new JLabel(" name");
+		numberLabel = new JLabel("number");
+		evolvableLabel = new JLabel("evolvable");
+		modifierLabel = new JLabel("modifier");
+		pokedexDropdown = new JComboBox();
+		clearButton = new JButton("Clear");
+		saveButton = new JButton("save");
+		
+		this.firstType = new JPanel();
+		this.secondType = new JPanel();
+		this.thirdType = new JPanel();
+		this.fourthType = new JPanel();
+		
 	setupPanel();
 	setupLayout();
 	setupListeners();
@@ -63,12 +87,29 @@ public class pokemonPanel extends JPanel
 	
 	private void setupPanel()
 	{
+		this.setLayout(appLayout);
+		
 		this.setBackground(Color.RED);
 		this.add(healthLabel);
 		this.add(attackLabel);
 		this.add(nameLabel);
 		this.add(numberLabel);
 		this.add(evolvableLabel);
+		this.add(iconLabel);
+		this.add(modifierLabel);
+		this.add(modifierField);
+		this.add(attackField);
+		this.add(nameField);
+		this.add(healthField);
+		this.add(numberField);
+		this.add(evolvableBox);
+		this.add(pokedexDropdown);
+		this.add(clearButton);
+		this.add(saveButton);
+		
+		this.add(descriptionArea);
+		this.add(typeArea);
+		
 		
 		
 	}
