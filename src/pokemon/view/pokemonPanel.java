@@ -64,7 +64,7 @@ public class pokemonPanel extends JPanel
 		healthField = new JTextField("hp");
 		modifierField = new JTextField("mod");
 		
-		iconLabel = new JLabel("pokemon", new ImageIcon(getClass().getResource("/pokemon/view/images/pokemon-logo-black-transparent.png")), JLabel.CENTER);
+		iconLabel = new JLabel("pokemon", new ImageIcon(getClass().getResource("Logo.png")), JLabel.CENTER);
 		
 		healthLabel = new JLabel("health");
 		attackLabel = new JLabel("Attack. ");
