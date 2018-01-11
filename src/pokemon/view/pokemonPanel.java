@@ -182,8 +182,6 @@ public class pokemonPanel extends JPanel
 		this.add(descriptionArea);
 		this.add(typeArea);
 		
-		
-		
 	}
 	
 	
