@@ -103,10 +103,7 @@ public class pokemonPanel extends JPanel
 	setupLayout();
 	setupListeners();
 	}
-	private void updatePokedexInfo()
-	{
-		
-	}
+	
 	private void updateImage()
 	{
 		String path = "/pokemon/view/images/";
