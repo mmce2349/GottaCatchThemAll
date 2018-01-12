@@ -24,7 +24,7 @@ public abstract class Pokemon
 		ArrayList<String> parentType = new ArrayList<String>();
 		Class<?> currentClass = this.getClass();
 		
-		while(currentClass.getSuperClass() !=null)
+		while(currentClass.getSuperclass() !=null)
 		{
 			Class<?> [] pokemonTypes= getClass().getInterfaces();
 			types = new String[pokemonTypes.length];
@@ -38,7 +38,7 @@ public abstract class Pokemon
 				parentType.add(currentInterface);
 			}
 		}
-		currentClass = currentClass.getSuperClass();
+		currentClass = currentClass.getSuperclass();
 		}
 		
 		types = new String [parentType.size()];
