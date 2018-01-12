@@ -49,6 +49,14 @@ public class pokemonPanel extends JPanel
 		healthField.setText(appController.getPokedex().get(index).getHealthPoints() + "");
 		modifierField.setText(appController.getPokedex().get(index).getHealthPoints() + "");
 		
+		descriptionArea.setText(appController.getPokedex().get(index).toString());
+		typeArea.setText("");
+		
+		for (String current: appController.getPokedex().get(index).getPokemonTypes())
+		{
+			typeArea.append(current + "\n");
+		}
+		
 	}
 	public pokemonPanel(pokemonController appController)
 	{
