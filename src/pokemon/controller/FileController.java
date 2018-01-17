@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.PrintWriter;
 import pokemon.model.Pokemon;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class FileController 
 {
@@ -34,5 +35,26 @@ public class FileController
 		{
 			System.out.println("There was an Error:" + error.getMessage());
 		}
+	}
+	
+	public static String readPokemonFromFile()
+	{
+		String contents = "";
+		String path = "Saved Pokemon.txt";
+		try
+		{
+			Scanner fileScanner = new Scanner(new File(path));
+			while (fileScanner.hasNextLine())
+			{
+				String row = fileScanner.nextLine();
+				contents += row + "\n";
+			}
+			fileScanner.close();
+		}
+		catch(FileNotFoundException error)
+		{
+			System.out.println("There was an error:" + error.getMessage());
+		}
+		return contents; 
 	}
 }
