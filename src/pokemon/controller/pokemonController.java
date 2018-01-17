@@ -76,7 +76,7 @@ public class pokemonController
 		}
 		return names;
 	}
-	public void updateSelection(int selection, int health, int attack, boolean evolve, double modify, String name)
+	public void updateSelected(int selection, int health, int attack, boolean evolve, double modify, String name)
 	{
 		Pokemon selected = pokedex.get(selection);
 		
